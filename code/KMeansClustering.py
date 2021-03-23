@@ -16,18 +16,16 @@ import numpy as np
 
 class KMeansCluster():
 
-    def __init__(self, k=1, tol=1e-5) -> None:
+    def __init__(self, k=1) -> None:
         """ 
         Initialize 
 
         Parameters
         ----------
         k : the number of clusters want to generate
-        tol : the tolerance of stopping
 
         """
         self.k = k
-        self.tol = tol
         self.X = None
         self.centroids = None
         self.labels = []
